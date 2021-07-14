@@ -1,0 +1,107 @@
+:root {
+	--bg: #fffcdc;
+	--primary: #02343f;
+}
+
+body {
+	background-color: var(--bg);
+	font-family: 'Mulish', sans-serif;
+	color: var(--primary);
+}
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box {
+	border-radius: 50px 10px 50px 10px;
+	background: linear-gradient(145deg, #fffeda, #d8d5b8);
+	box-shadow: 9px 9px 18px #ccc9ad, -9px -9px 18px #ffffeb;
+}
+
+header .title {
+	margin: 50px 0px 15px 0px;
+	padding: 0px 50px;
+}
+
+.title h1 {
+	background: transparent;
+}
+
+.formularios {
+	margin: 50px auto;
+	width: 90vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 15px 15px;
+}
+
+.zona {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 30px 30px 30px;
+	align-items: center;
+	justify-content: center;
+	height: fit-content;
+}
+
+.zona h2 {
+	text-align: center;
+}
+.zona label {
+	display: block;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.zona input {
+	margin-bottom: 15px;
+	background-color: var(--bg);
+	border-radius: 10px;
+	border: 1px solid var(--primary);
+	text-align: center;
+}
+.zona button {
+	padding: 5px 15px;
+	margin-bottom: 5px;
+	background-color: var(--primary);
+	border-radius: 15px;
+	border: 1px solid var(--primary);
+	color: var(--bg);
+	text-align: center;
+}
+.zona button:hover {
+	cursor: pointer;
+}
+
+.resultado {
+	grid-column: 2;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.cuadrado {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.triangulo {
+	grid-column: 3;
+	border-radius: 200px 200px 15px 15px;
+	grid-row: 1;
+}
+
+.triangulo form {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.circulo {
+	border-radius: 50%;
+	padding: 80px 1px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Geometria</title>
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="title box">
+				<h1>Figuras geometricas</h1>
+			</div>
+			<h3>El primer taller del curso</h3>
+		</header>
+		<main class="formularios">
+			<section class="resultado">
+				<h2>Resultado</h2>
+				<h3>0</h3>
+			</section>
+			<section class="zona box cuadrado">
+				<h2>Cuadrado</h2>
+				<form action="">
+					<label for="inputCuadrado"> ¿Cuanto mide el lado? </label>
+					<input id="inputCuadrado" type="number" />
+				</form>
+				<button onclick="calcularPerimetroCuadrado()">
+					Calcular el perimetro
+				</button>
+				<button onclick="calcularAreaCuadrado()">Calcular el area</button>
+			</section>
+
+			<section class="zona box triangulo">
+				<h2>Triangulo</h2>
+				<form action="">
+					<label for="inputTriangulo1"> ¿Cuanto miden los lado? </label>
+					<input id="inputTriangulo1" type="number" />
+					<input id="inputTriangulo2" type="number" />
+					<input id="inputTriangulo3" type="number" />
+				</form>
+				<button onclick="calcularPerimetroTriangulo()">
+					Calcular el perimetro
+				</button>
+
+				<label for="inputTriangulo1"> ¿Sabes la base y la altura? </label>
+				<input id="baseTriangulo" type="number" />
+				<input id="alturaTriangulo" type="number" />
+				<button onclick="calcularAreaTriangulo()">Calcular el area</button>
+			</section>
+
+			<section class="zona box circulo">
+				<h2>Circulo</h2>
+				<form action="">
+					<label for="inputRadio"> ¿Cuanto mide el radio? </label>
+					<input id="inputRadio" type="number" />
+				</form>
+				<button onclick="calcularDiametroCirculo()">
+					Calcular el Diametro
+				</button>
+				<button onclick="calcularPerimetroCirculo()">
+					Calcular el perimetro
+				</button>
+				<button onclick="calcularAreaCirculo()">Calcular el area</button>
+			</section>
+		</main>
+		<script src="./figuras.js"></script>
+	</body>
+</html>
