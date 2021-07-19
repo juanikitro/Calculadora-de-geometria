@@ -1,5 +1,8 @@
 # Calculadora-de-geometria
-Proyecto hecho para pr acticar JS
+Proyecto hecho para practicar JS con funciones donde podamos desarrollar formulas y modificar el DOM
+
+##DEMO
+https://jpkitro.github.io/Calculadora-de-geometria/
 
 ### Cuadrado
 
